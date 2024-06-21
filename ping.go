@@ -1,4 +1,4 @@
-// Package probing is a simple but powerful ICMP echo (ping) library.
+// package ping is a simple but powerful ICMP echo (ping) library.
 //
 // Here is a very simple example that sends and receives three packets:
 //
@@ -49,7 +49,7 @@
 // it calls the OnFinish callback.
 //
 // For a full ping example, see "cmd/ping/ping.go".
-package probing
+package ping
 
 import (
 	"bytes"

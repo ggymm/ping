@@ -1,4 +1,4 @@
-package probing
+package ping
 
 import (
 	"net"
