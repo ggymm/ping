@@ -1,4 +1,4 @@
-module github.com/prometheus-community/pro-bing
+module github.com/ggymm/ping
 
 go 1.19
 

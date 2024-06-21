@@ -76,7 +76,7 @@ func (c *icmpv4Conn) ReadFrom(b []byte) (int, int, net.Addr, error) {
 	return n, ttl, src, err
 }
 
-func (c icmpv4Conn) ICMPRequestType() icmp.Type {
+func (c *icmpv4Conn) ICMPRequestType() icmp.Type {
 	return ipv4.ICMPTypeEcho
 }
 
@@ -101,6 +101,6 @@ func (c *icmpV6Conn) ReadFrom(b []byte) (int, int, net.Addr, error) {
 	return n, ttl, src, err
 }
 
-func (c icmpV6Conn) ICMPRequestType() icmp.Type {
+func (c *icmpV6Conn) ICMPRequestType() icmp.Type {
 	return ipv6.ICMPTypeEchoRequest
 }
